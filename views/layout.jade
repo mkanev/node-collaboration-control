@@ -1,7 +1,11 @@
 doctype 5
-html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+html(lang='ru', ng-app='collabControl')
+    include includes/head
+    body
+        .mainWrapper
+            include includes/header
+            .container(style='margin-top: 30px; padding-bottom: 50px;')
+                block content
+        .footerWrapper
+            include includes/footer
+    include includes/foot

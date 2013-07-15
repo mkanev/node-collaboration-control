@@ -1,12 +1,31 @@
 {
-  "name": "application-name",
-  "version": "0.0.1",
-  "private": true,
-  "scripts": {
-    "start": "node app.js"
-  },
-  "dependencies": {
-    "express": "3.3.4",
-    "jade": "*"
-  }
+    "name": "CollabControl",
+    "description": "",
+    "author": "Maksim Kanev <maksim.kanev@gmail.com>",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": "node app.js"
+    },
+    "dependencies": {
+        "express": "3.2.6",
+        "jade": "*",
+        "html": "latest",
+        "lodash": "1.2.x",
+        "everyauth": "0.3.x",
+        "gzippo": "latest",
+        "async": "latest",
+        "view-helpers": "latest"
+    },
+    "devDependencies": {
+        "lorem-ipsum": "latest",
+        "supertest": "latest",
+        "should": "latest",
+        "mocha": "latest",
+        "nodemon": "latest"
+    },
+    "engines": {
+        "node": ">=0.8.x",
+        "npm": ">=1.2.x"
+    }
 }
