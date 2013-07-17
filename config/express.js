@@ -10,7 +10,8 @@
  */
 
 var express = require('express'),
-    helpers = require('view-helpers');
+    helpers = require('view-helpers'),
+    compass = require('node-compass');
 
 module.exports = function (app, config) {
 
@@ -37,6 +38,9 @@ module.exports = function (app, config) {
     app.configure(function () {
         // dynamic helpers
         app.use(helpers(config.app.name));
+
+        // compass
+        app.use(compass(config.compass));
 
         // cookieParser should be above session
         app.use(express.cookieParser());
