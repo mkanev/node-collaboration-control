@@ -19,11 +19,15 @@
         "view-helpers": "latest"
     },
     "devDependencies": {
+        "grunt": "~0.4.1",
         "lorem-ipsum": "latest",
         "supertest": "latest",
         "should": "latest",
         "mocha": "latest",
-        "nodemon": "latest"
+        "nodemon": "latest",
+        "grunt-contrib-compass": "~0.4.0",
+        "grunt-contrib-jshint": "~0.6.0",
+        "grunt-contrib-clean": "~0.5.0"
     },
     "engines": {
         "node": ">=0.8.x",

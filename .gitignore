@@ -15,3 +15,5 @@ npm-debug.log
 
 /.idea
 /node_modules
+/.sass-cache
+**/.sass-cache

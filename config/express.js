@@ -10,8 +10,7 @@
  */
 
 var express = require('express'),
-    helpers = require('view-helpers'),
-    compass = require('node-compass');
+    helpers = require('view-helpers');
 
 module.exports = function (app, config) {
 
@@ -25,6 +24,7 @@ module.exports = function (app, config) {
     }))
     app.use(express.favicon());
     app.use(express.static(config.root + '/public'));
+    app.use(express.static(config.root + '/assets'));
 
     // don't use logger for test env
     if (process.env.NODE_ENV !== 'test') {
@@ -38,9 +38,6 @@ module.exports = function (app, config) {
     app.configure(function () {
         // dynamic helpers
         app.use(helpers(config.app.name));
-
-        // compass
-        app.use(compass(config.compass));
 
         // cookieParser should be above session
         app.use(express.cookieParser());

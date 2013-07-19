@@ -16,13 +16,6 @@ module.exports = {
         root: rootPath,
         app: {
             name: 'Collaboration Control'
-        },
-        compass: {
-            project: path.join(rootPath, 'assets'),
-            sass: 'sass',
-            css: 'css',
-            javascript: 'js',
-            relative: true
         }
     },
     test: {
