@@ -1,1 +1,7 @@
-p There are {{items.length}} articles
+ul.thumbnails
+    li.span4(ng-repeat='item in items')
+        .thumbnail
+            a(href='/seminars/{{item.id}}')
+                img(src='http://placehold.it/400x270')
+                h4 {{item.title}}
+                span.caption(style='text-align: justify;') {{item.text}}

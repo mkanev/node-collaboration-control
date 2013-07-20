@@ -1,27 +1,9 @@
-.container
-    .navbar.navbar-inverse.nav
-        .navbar-inner
-            a.btn.btn-navbar(data-toggle="collapse", data-target=".nav-collapse")
-                span.icon-bar
-                span.icon-bar
-                span.icon-bar
-            a.brand(href="/") CMS
-            .nav-collapse.collapse
-                ul.nav
-                    li.divider-vertical
-                    li
-                        a(href="#")
-                            i.icon-home.icon-white Home
-                .pull-right
-                    ul.nav.pull-right
-                        li.dropdown
-                            a.dropdown-toggle(href="#", data-toggle="dropdown") Welcome, User
-                                b.caret
-                            ul.dropdown-menu
-                                li
-                                    a(href="/user/preferences") Preferences
-                                li
-                                    a(href="/help/support") Contact Support
-                                li.divider
-                                li
-                                    a(href="/auth/logout") Logout
+header.header
+    .container
+        .row
+            a.span4.company-logo.visible-phone(href='/') &nbsp;
+            a.span2.top-menu-item.active(href='/') Семинары
+            a.span2.top-menu-item(href='/view2') Блог
+            a.span4.company-logo.hidden-phone(href='/') &nbsp;
+            a.span2.top-menu-item(href='/view3') Площадка
+            a.span2.top-menu-item(href='/view4') Инкубатор

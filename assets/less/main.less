@@ -1,0 +1,109 @@
+@import 'partials/_fonts';
+@import 'partials/_mixins';
+@import 'partials/_vars';
+
+// Page
+//  @primary-color: @color-orange;
+//  @primary-color: @color-wisteria;
+//  @primary-color: @color-green-sea;
+@primary-color: @color-nephritis;
+@highlight: @color-white;
+
+// Structure
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: @primary-color;
+}
+
+.mainWrapper {
+  min-height: 100%;
+}
+
+.page-content {
+  background-color: @highlight;
+}
+
+.header {
+  min-height: ~"@{header-height}px";
+  height: ~"@{header-height}px";
+  background: url('/img/company-logo.png') no-repeat center transparent;
+}
+
+.header a {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header .top-menu-item {
+  color: @highlight;
+  font-family: @font-family-light-ru;
+  .fit-line-height(@header-height, 1.5, 2);
+  text-align: center;
+}
+
+.header .company-logo {
+  height: ~"@{header-height}px";
+}
+
+.header a:not(.company-logo):hover,
+.header a.active:not(.company-logo) {
+  background-color: @highlight;
+  color: @primary-color;
+}
+
+.footer {
+  margin-top: -~"@{footer-height}px";
+  height: ~"@{footer-height}px";
+  position: relative;
+  clear: both;
+  color: @highlight;
+  font-family: @font-family-light-ru;
+}
+
+.footer .company-title {
+  .fit-line-height(@header-height, .9, 1);
+  text-align: left;
+}
+
+.footer .powered-by-block {
+  .fit-line-height(@header-height, .9, 1);
+  text-align: right;
+}
+
+// Seminars
+.thumbnails li {
+  position: relative;
+  overflow: hidden;
+}
+
+.thumbnail {
+  cursor: pointer;
+}
+
+.thumbnail a {
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.thumbnail a span.caption {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  width: 95%;
+  height: 100%;
+  color: #fff !important;
+  z-index: 10;
+}
+
+.thumbnail a:hover span.caption {
+  display: block;
+}

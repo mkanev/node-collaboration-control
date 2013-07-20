@@ -9,13 +9,14 @@
     },
     "dependencies": {
         "express": "3.2.6",
-        "jade": "*",
+        "jade": "latest",
         "html": "latest",
-        "lodash": "1.2.x",
+        "lodash": "latest",
         "everyauth": "0.3.x",
         "gzippo": "latest",
         "async": "latest",
-        "view-helpers": "latest"
+        "view-helpers": "latest",
+        "date-utils": "latest"
     },
     "devDependencies": {
         "lorem-ipsum": "latest",

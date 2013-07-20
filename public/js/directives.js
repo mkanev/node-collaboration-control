@@ -15,23 +15,5 @@ angular.module('collabControl.directives', []).
         return function (scope, elm, attrs) {
             elm.text(version);
         };
-    }]).
-    directive('isoGrid',function () {
-        return {
-            link: function (scope, elm, attrs) {
-                scope.$on('isoGridLoaded', function (event) {
-                    fireIsotopeReLayout($(elm));
-                });
-            }
-        }
-    }).
-    directive('isoGridRepeat', function () {
-        return {
-            link: function (scope, elm, attrs) {
-                if (scope.$last) {
-                    scope.$emit('isoGridLoaded');
-                }
-            }
-        }
-    })
+    }])
 ;
