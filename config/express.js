@@ -24,7 +24,6 @@ module.exports = function (app, config) {
     }))
     app.use(express.favicon());
     app.use(express.static(config.root + '/public'));
-    app.use(express.static(config.root + '/assets'));
 
     // don't use logger for test env
     if (process.env.NODE_ENV !== 'test') {
@@ -36,6 +35,11 @@ module.exports = function (app, config) {
     app.set('view engine', 'jade');
 
     app.configure(function () {
+        // locals for requests
+        app.use(function(req, res, next) {
+            res.locals.url = req.url;
+            next();
+        });
         // dynamic helpers
         app.use(helpers(config.app.name));
 

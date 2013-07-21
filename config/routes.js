@@ -11,12 +11,16 @@ var async = require('async'),
 module.exports = function (app) {
 
     // seminars
-    var seminars = require("../app/controllers/seminars");
-    app.get('/api/seminars', seminars.seminars);
-
+    var root = require('../app/controllers/index')
+        , seminars = require('../app/controllers/seminars')
+        , blog = require('../app/controllers/blog')
+        , playground = require('../app/controllers/playground')
+        , incubator = require('../app/controllers/incubator')
+        ;
     // home
-    app.get('/', seminars.index);
-
-    var angular = require("../app/controllers/angular");
-    app.get('/partials/:name', angular.partials);
+    app.get('/', root.index);
+    app.get('/seminars', seminars.index);
+    app.get('/blog', blog.index);
+    app.get('/playground', playground.index);
+    app.get('/incubator', incubator.index);
 }

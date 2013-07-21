@@ -5,10 +5,6 @@ var loremIpsum = require('lorem-ipsum'),
     maxValue = 7;
 
 exports.index = function (req, res) {
-    res.render('index');
-};
-
-exports.seminars = function (req, res) {
     var items = [];
     for (var i = 0; i < maxValue; i++) {
         var fullText = loremIpsum({
@@ -32,8 +28,6 @@ exports.seminars = function (req, res) {
             priority: 'weight' + Math.round(Math.random() * 3)
         });
     }
-    res.json({
-        items: items
-    });
+    res.render('seminars', {items: items});
 };
 

@@ -58,8 +58,6 @@ body {
 }
 
 .footer {
-  margin-top: -~"@{footer-height}px";
-  height: ~"@{footer-height}px";
   position: relative;
   clear: both;
   color: @highlight;
@@ -67,12 +65,12 @@ body {
 }
 
 .footer .company-title {
-  .fit-line-height(@header-height, .9, 1);
+  .fit-line-height(@footer-height, .9, 1);
   text-align: left;
 }
 
 .footer .powered-by-block {
-  .fit-line-height(@header-height, .9, 1);
+  .fit-line-height(@footer-height, .9, 1);
   text-align: right;
 }
 

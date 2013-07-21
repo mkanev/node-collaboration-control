@@ -2,8 +2,8 @@ header.header
     .container
         .row
             a.span4.company-logo.visible-phone(href='/') &nbsp;
-            a.span2.top-menu-item.active(href='/') Семинары
-            a.span2.top-menu-item(href='/view2') Блог
+            a.span2.top-menu-item(href='/seminars', class='/seminars' === url && 'active') Семинары
+            a.span2.top-menu-item(href='/blog', class='/blog' === url && 'active') Блог
             a.span4.company-logo.hidden-phone(href='/') &nbsp;
-            a.span2.top-menu-item(href='/view3') Площадка
-            a.span2.top-menu-item(href='/view4') Инкубатор
+            a.span2.top-menu-item(href='/playground', class='/playground' === url && 'active') Площадка
+            a.span2.top-menu-item(href='/incubator', class='/incubator' === url && 'active') Инкубатор
