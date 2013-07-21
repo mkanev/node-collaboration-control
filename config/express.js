@@ -21,7 +21,7 @@ module.exports = function (app, config) {
             return /json|text|javascript|css/.test(res.getHeader('Content-Type'));
         },
         level: 9
-    }))
+    }));
     app.use(express.favicon());
     app.use(express.static(config.root + '/public'));
 
@@ -83,4 +83,4 @@ module.exports = function (app, config) {
         });
 
     });
-}
+};

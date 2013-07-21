@@ -23,4 +23,4 @@ module.exports = function (app) {
     app.get('/blog', blog.index);
     app.get('/playground', playground.index);
     app.get('/incubator', incubator.index);
-}
+};
