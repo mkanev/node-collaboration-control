@@ -1,33 +1,34 @@
 {
-  "name": "CollabControl",
-  "description": "",
-  "author": "Maksim Kanev <maksim.kanev@gmail.com>",
-  "version": "0.0.1",
-  "private": true,
-  "scripts": {
-    "start": "node app.js"
-  },
-  "dependencies": {
-    "express": "3.2.6",
-    "jade": "latest",
-    "html": "latest",
-    "lodash": "latest",
-    "everyauth": "0.3.x",
-    "gzippo": "latest",
-    "async": "latest",
-    "view-helpers": "latest",
-    "date-utils": "latest"
-  },
-  "devDependencies": {
-    "lorem-ipsum": "latest",
-    "supertest": "latest",
-    "should": "latest",
-    "mocha": "latest",
-    "nodemon": "latest",
-    "jshint": "~2.1.4"
-  },
-  "engines": {
-    "node": ">=0.8.x",
-    "npm": ">=1.2.x"
-  }
+    "name": "CollabControl",
+    "description": "",
+    "author": "Maksim Kanev <maksim.kanev@gmail.com>",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": "node app.js"
+    },
+    "dependencies": {
+        "express": "3.2.6",
+        "jade": "latest",
+        "mongoose": "latest",
+        "html": "latest",
+        "lodash": "latest",
+        "everyauth": "0.3.x",
+        "gzippo": "latest",
+        "async": "latest",
+        "view-helpers": "latest",
+        "date-utils": "latest"
+    },
+    "devDependencies": {
+        "lorem-ipsum": "latest",
+        "supertest": "latest",
+        "should": "latest",
+        "mocha": "latest",
+        "nodemon": "latest",
+        "jshint": "~2.1.4"
+    },
+    "engines": {
+        "node": ">=0.8.x",
+        "npm": ">=1.2.x"
+    }
 }
